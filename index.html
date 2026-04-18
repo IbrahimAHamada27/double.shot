@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-    
 <head>
     <meta charset="UTF-8">
     <title>Double Shot Cafe - Menu</title>
@@ -21,12 +20,29 @@
             --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        html[lang="en"] { direction: ltr; font-family: 'Poppins', sans-serif; }
-        html[lang="ar"] { direction: rtl; font-family: 'Tajawal', sans-serif; }
-        html[lang="en"] .ar { display: none !important; }
-        html[lang="ar"] .en { display: none !important; }
+        html[lang="en"] {
+            direction: ltr;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html[lang="ar"] {
+            direction: rtl;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        html[lang="en"] .ar {
+            display: none !important;
+        }
+
+        html[lang="ar"] .en {
+            display: none !important;
+        }
 
         body {
             background: var(--bg);
@@ -38,7 +54,9 @@
         /* HEADER */
         header {
             position: fixed;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             padding: 15px 40px;
             display: flex;
             justify-content: center;
@@ -132,8 +150,15 @@
         }
 
         @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-40px); }
-            to   { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* MENU */
@@ -190,16 +215,49 @@
         }
 
         /* ── Category Background Images ── */
-        .category.espresso .category-header { background-image: url('اسبرسو.webp'); }
-        .category.hot      .category-header { background-image: url('قهوه.jpg'); }
-        .category.iced     .category-header { background-image: url('ايس درينك.jpg'); }
-        .category.frappe   .category-header { background-image: url('فرابيه.jpg'); }
-        .category.smoothie .category-header { background-image: url('اسموزي.jpg'); }
-        .category.juice    .category-header { background-image: url('عصير فريش.jpg'); }
-        .category.soda     .category-header { background-image: url('صودا.jpg'); }
-        .category.boba     .category-header { background-image: url('بوبا.jpg'); }
-        .category.dessert  .category-header { background-image: url('ديزرت.jpg'); }
-        .category.yogurt   .category-header { background-image: url('زبادوه.jpg'); }
+        .category.espresso .category-header {
+            background-image: url('اسبرسو.webp');
+        }
+
+        .category.hot .category-header {
+            background-image: url('قهوه.jpg');
+        }
+
+        .category.coffee .category-header {
+            background-image: url('قهوه.jpg');
+        }
+
+        .category.iced .category-header {
+            background-image: url('ايس درينك.jpg');
+        }
+
+        .category.frappe .category-header {
+            background-image: url('فرابيه.jpg');
+        }
+
+        .category.smoothie .category-header {
+            background-image: url('اسموزي.jpg');
+        }
+
+        .category.juice .category-header {
+            background-image: url('عصير فريش.jpg');
+        }
+
+        .category.soda .category-header {
+            background-image: url('صودا.jpg');
+        }
+
+        .category.boba .category-header {
+            background-image: url('بوبا.jpg');
+        }
+
+        .category.yogurt .category-header {
+            background-image: url('زبادوه.jpg');
+        }
+
+        .category.extra .category-header {
+            background-image: url('ديزرت.jpg');
+        }
 
         .items-list {
             padding: 30px;
@@ -245,14 +303,7 @@
             margin-inline-start: 16px;
         }
 
-        .category-tax-note {
-            text-align: center;
-            font-size: 0.82rem;
-            color: var(--text-muted);
-            padding: 10px 20px 20px;
-            background: rgba(18, 16, 14, 0.95);
-            letter-spacing: 0.5px;
-        }
+
 
         /* FOOTER */
         footer {
@@ -274,7 +325,9 @@
             transition: var(--transition);
         }
 
-        .footer-logo:hover { opacity: 1; }
+        .footer-logo:hover {
+            opacity: 1;
+        }
 
         .footer-content h3 {
             color: var(--primary);
@@ -290,13 +343,37 @@
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
-            header { padding: 12px 20px; }
-            .lang-btn { top: 22px; left: 15px; }
-            .hero-box { width: 240px; height: 240px; }
-            .category h2 { font-size: 2rem; }
-            .items-list { grid-template-columns: 1fr; padding: 20px; }
-            .item-name { font-size: 1.05rem; }
-            .item-price { font-size: 1rem; padding: 5px 12px; }
+            header {
+                padding: 12px 20px;
+            }
+
+            .lang-btn {
+                top: 22px;
+                left: 15px;
+            }
+
+            .hero-box {
+                width: 240px;
+                height: 240px;
+            }
+
+            .category h2 {
+                font-size: 2rem;
+            }
+
+            .items-list {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .item-name {
+                font-size: 1.05rem;
+            }
+
+            .item-price {
+                font-size: 1rem;
+                padding: 5px 12px;
+            }
         }
     </style>
 </head>
@@ -327,282 +404,292 @@
     <!-- MENU -->
     <section class="menu-container">
 
-        <!-- ESPRESSO -->
+        <!-- ESPRESSO CORNER -->
         <div class="category espresso">
             <div class="category-header">
-                <h2><span class="en">Espresso Bar</span><span class="ar">اسبريسو بار</span></h2>
+                <h2><span class="en">Espresso Corner</span><span class="ar">ركن الإسبريسو</span></h2>
             </div>
             <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Spanish Latte</span><span class="ar">سبانيش لاتيه</span></span>
-                    <span class="item-price">85 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Latte</span><span class="ar">لاتيه</span></span>
-                    <span class="item-price">70 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Cappuccino</span><span class="ar">كابتشينو</span></span>
-                    <span class="item-price">70 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Mocha</span><span class="ar">موكا</span></span>
-                    <span class="item-price">75 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Espresso</span><span class="ar">اسبريسو</span></span>
-                    <span class="item-price">35 / 55 EGP</span>
-                </div>
+                <div class="item-card"><span class="item-name"><span class="en">Spanish Latte</span><span
+                            class="ar">سبانش لاتيه</span></span><span class="item-price">105 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Latte</span><span
+                            class="ar">لاتيه</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Cappuccino</span><span
+                            class="ar">كابتشينو</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Flat White</span><span class="ar">فلات
+                            وايت</span></span><span class="item-price">70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Mocha</span><span
+                            class="ar">موكا</span></span><span class="item-price">85 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Caramel Mocha</span><span
+                            class="ar">كراميل موكا</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Caramel Macchiato</span><span
+                            class="ar">كراميل ماكياتو</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Hot Chocolate</span><span class="ar">هوت
+                            شوكليت</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Dulce De Leche Latte</span><span
+                            class="ar">دولسي دي ليتشي لاتيه</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Espresso (S/D)</span><span
+                            class="ar">إسبريسو (سنجل/دبل)</span></span><span class="item-price">45 / 55 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Espresso Macchiato (S/D)</span><span
+                            class="ar">إسبريسو ماكياتو</span></span><span class="item-price">50 / 60 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Cortado</span><span
+                            class="ar">كورتادو</span></span><span class="item-price">65 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Americano (M/L)</span><span
+                            class="ar">أمريكانو</span></span><span class="item-price">60 / 70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Hot Chocolate Marshmallow</span><span
+                            class="ar">هوت شوكليت مارشميلو</span></span><span class="item-price">120 EGP</span></div>
             </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
+
         </div>
 
-        <!-- HOT DRINKS -->
+        <!-- HOT CORNER -->
         <div class="category hot">
             <div class="category-header">
-                <h2><span class="en">Hot Drinks</span><span class="ar">مشروبات ساخنة</span></h2>
+                <h2><span class="en">Hot Corner</span><span class="ar">مشروبات ساخنة</span></h2>
             </div>
             <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">English Tea</span><span class="ar">شاي إنجليزي</span></span>
-                    <span class="item-price">30 / 40 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Green Tea</span><span class="ar">شاي أخضر</span></span>
-                    <span class="item-price">30 / 40 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Karak Tea</span><span class="ar">شاي كرك</span></span>
-                    <span class="item-price">65 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Hot Chocolate</span><span class="ar">هوت شوكليت</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
+                <div class="item-card"><span class="item-name"><span class="en">English Tea</span><span class="ar">شاي
+                            إنجليزي</span></span><span class="item-price">40 / 50 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Green Tea</span><span class="ar">شاي
+                            أخضر</span></span><span class="item-price">40 / 50 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Earl Grey Tea</span><span class="ar">شاي
+                            إيرل جراي</span></span><span class="item-price">40 / 50 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Anise</span><span
+                            class="ar">ينسون</span></span><span class="item-price">35 / 45 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Roselle</span><span
+                            class="ar">كركديه</span></span><span class="item-price">35 / 45 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Mint</span><span
+                            class="ar">نعناع</span></span><span class="item-price">35 / 45 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Lemon Ginger</span><span
+                            class="ar">ليمون بالزنجبيل</span></span><span class="item-price">35 / 45 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Herbs</span><span
+                            class="ar">أعشاب</span></span><span class="item-price">50 / 60 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Flavored Tea</span><span class="ar">شاي
+                            بنكهات</span></span><span class="item-price">50 / 60 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Tea With Milk</span><span class="ar">شاي
+                            بحليب</span></span><span class="item-price">50 / 60 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Nescafe With Milk</span><span
+                            class="ar">نسكافيه بالحليب</span></span><span class="item-price">50 / 65 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Nescafe Black</span><span
+                            class="ar">نسكافيه بلاك</span></span><span class="item-price">35 / 50 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Hot Cider</span><span class="ar">هوت
+                            سيدر</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Cinnamon With Milk</span><span
+                            class="ar">قرفة بالحليب</span></span><span class="item-price">50 / 60 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Sahlab Nuts</span><span class="ar">سحلب
+                            بالمكسرات</span></span><span class="item-price">75 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Karak Tea</span><span class="ar">شاي
+                            كرك</span></span><span class="item-price">70 EGP</span></div>
             </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
+
         </div>
 
-        <!-- ICED DRINKS -->
+        <!-- COFFEE CORNER -->
+        <div class="category coffee">
+            <div class="category-header">
+                <h2><span class="en">Coffee Corner</span><span class="ar">ركن القهوة</span></h2>
+            </div>
+            <div class="items-list">
+                <div class="item-card"><span class="item-name"><span class="en">Turkish Coffee</span><span
+                            class="ar">قهوة تركي</span></span><span class="item-price">40 / 60 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">French Coffee</span><span
+                            class="ar">قهوة فرنساوي</span></span><span class="item-price">45 / 65 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Hazelnut Coffee</span><span
+                            class="ar">قهوة بالبندق</span></span><span class="item-price">50 / 70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Nutella Coffee</span><span
+                            class="ar">قهوة نوتيلا</span></span><span class="item-price">55 / 75 EGP</span></div>
+            </div>
+
+        </div>
+
+        <!-- ICED CORNER -->
         <div class="category iced">
             <div class="category-header">
-                <h2><span class="en">Cold Brews &amp; Iced</span><span class="ar">ايس درينكس</span></h2>
+                <h2><span class="en">Iced Corner</span><span class="ar">ركن المثلجات</span></h2>
             </div>
             <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Ice Latte</span><span class="ar">ايس لاتيه</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Ice Mocha</span><span class="ar">ايس موكا</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Ice Spanish Latte</span><span class="ar">ايس سبانيش لاتيه</span></span>
-                    <span class="item-price">85 EGP</span>
-                </div>
+                <div class="item-card"><span class="item-name"><span class="en">Ice Latte</span><span class="ar">أيس
+                            لاتيه</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Ice Chocolate</span><span class="ar">أيس
+                            شوكليت</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Ice Mocha</span><span class="ar">أيس
+                            موكا</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Ice Dulce De Leche</span><span
+                            class="ar">أيس دولسي دي ليتشي</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Ice Spanish Latte</span><span
+                            class="ar">أيس سبانش لاتيه</span></span><span class="item-price">105 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Ice Caramel Macchiato</span><span
+                            class="ar">أيس كراميل ماكياتو</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Ice Americano</span><span class="ar">أيس
+                            أمريكانو</span></span><span class="item-price">70 EGP</span></div>
             </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
+
         </div>
 
-        <!-- FRAPPE -->
+        <!-- FRAPPE CORNER -->
         <div class="category frappe">
             <div class="category-header">
-                <h2><span class="en">Frappe</span><span class="ar">فرابيه</span></h2>
+                <h2><span class="en">Frappe Corner</span><span class="ar">ركن الفرابيه</span></h2>
             </div>
             <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Caramel</span><span class="ar">كراميل</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Oreo</span><span class="ar">أوريو</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Peanut Butter</span><span class="ar">بينت بتر</span></span>
-                    <span class="item-price">100 EGP</span>
-                </div>
+                <div class="item-card"><span class="item-name"><span class="en">Caramel Frappe</span><span
+                            class="ar">فرابيه كراميل</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Vanilla Frappe</span><span
+                            class="ar">فرابيه فانيليا</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Hazelnut Frappe</span><span
+                            class="ar">فرابيه بندق</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Mocha Frappe</span><span
+                            class="ar">فرابيه موكا</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Dulce De Leche Frappe</span><span
+                            class="ar">فرابيه دولسي دي ليتشي</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Strawberry Frappe</span><span
+                            class="ar">فرابيه فراولة</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Peach Frappe</span><span
+                            class="ar">فرابيه خوخ</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Oreo Frappe</span><span
+                            class="ar">فرابيه أوريو</span></span><span class="item-price">95 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Spanish Frappe</span><span
+                            class="ar">فرابيه سبانش</span></span><span class="item-price">105 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Peanut Butter Frappe</span><span
+                            class="ar">فرابيه زبدة فول سوداني</span></span><span class="item-price">105 EGP</span></div>
             </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
+
         </div>
 
-        <!-- SMOOTHIES -->
-        <div class="category smoothie">
-            <div class="category-header">
-                <h2><span class="en">Smoothies</span><span class="ar">سموزي</span></h2>
-            </div>
-            <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Mango Smoothie</span><span class="ar">سموزي مانجو</span></span>
-                    <span class="item-price">75 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Mixed Berry</span><span class="ar">سموزي مكسد بيري</span></span>
-                    <span class="item-price">85 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Strawberry</span><span class="ar">سموزي فراولة</span></span>
-                    <span class="item-price">75 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Avocado</span><span class="ar">سموزي أفوكادو</span></span>
-                    <span class="item-price">90 EGP</span>
-                </div>
-            </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
-        </div>
-
-        <!-- FRESH JUICE -->
-        <div class="category juice">
-            <div class="category-header">
-                <h2><span class="en">Fresh Juice</span><span class="ar">عصير فريش</span></h2>
-            </div>
-            <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Orange</span><span class="ar">برتقال</span></span>
-                    <span class="item-price">55 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Mango</span><span class="ar">مانجو</span></span>
-                    <span class="item-price">65 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Guava</span><span class="ar">جوافة</span></span>
-                    <span class="item-price">55 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Watermelon</span><span class="ar">بطيخ</span></span>
-                    <span class="item-price">55 EGP</span>
-                </div>
-            </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
-        </div>
-
-        <!-- SODA / MOJITO -->
-        <div class="category soda">
-            <div class="category-header">
-                <h2><span class="en">Mojito &amp; Soda</span><span class="ar">موهيتو وصودا</span></h2>
-            </div>
-            <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Classic Mojito</span><span class="ar">موهيتو كلاسيك</span></span>
-                    <span class="item-price">70 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Strawberry Mojito</span><span class="ar">موهيتو فراولة</span></span>
-                    <span class="item-price">75 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Blue Lagoon</span><span class="ar">بلو لاجون</span></span>
-                    <span class="item-price">75 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Soda Mix</span><span class="ar">صودا ميكس</span></span>
-                    <span class="item-price">65 EGP</span>
-                </div>
-            </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
-        </div>
-
-        <!-- BOBA -->
-        <div class="category boba">
-            <div class="category-header">
-                <h2><span class="en">Boba &amp; Bubble Tea</span><span class="ar">بوبا وبابل تي</span></h2>
-            </div>
-            <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Taro Boba</span><span class="ar">بوبا تارو</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Matcha Boba</span><span class="ar">بوبا ماتشا</span></span>
-                    <span class="item-price">85 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Strawberry Boba</span><span class="ar">بوبا فراولة</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Brown Sugar Boba</span><span class="ar">بوبا براون شوجر</span></span>
-                    <span class="item-price">85 EGP</span>
-                </div>
-            </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
-        </div>
-
-        <!-- YOGURT BOWLS -->
+        <!-- YOGURT CORNER -->
         <div class="category yogurt">
             <div class="category-header">
-                <h2><span class="en">Yogurt Bowls</span><span class="ar">زبادي بول</span></h2>
+                <h2><span class="en">Yogurt Corner</span><span class="ar">ركن الزبادي</span></h2>
             </div>
             <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Classic Yogurt</span><span class="ar">زبادي كلاسيك</span></span>
-                    <span class="item-price">65 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Granola &amp; Honey</span><span class="ar">زبادي جرانولا وعسل</span></span>
-                    <span class="item-price">75 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Berry Bowl</span><span class="ar">زبادي بيري</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
+                <div class="item-card"><span class="item-name"><span class="en">Strawberry Yogurt</span><span
+                            class="ar">زبادي فراولة</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Peach Yogurt</span><span
+                            class="ar">زبادي خوخ</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Kiwi Yogurt</span><span class="ar">زبادي
+                            كيوي</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Mango Yogurt</span><span
+                            class="ar">زبادي مانجو</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Blueberry Yogurt</span><span
+                            class="ar">زبادي توت أزرق</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Honey Yogurt</span><span
+                            class="ar">زبادي عسل</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Passion Fruit Yogurt</span><span
+                            class="ar">زبادي باشن فروت</span></span><span class="item-price">90 EGP</span></div>
             </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
+
         </div>
 
-        <!-- DESSERT -->
-        <div class="category dessert">
+        <!-- SMOOTHIES CORNER -->
+        <div class="category smoothie">
             <div class="category-header">
-                <h2><span class="en">Sweet Treats</span><span class="ar">حلويات</span></h2>
+                <h2><span class="en">Smoothies Corner</span><span class="ar">ركن السموذي</span></h2>
             </div>
             <div class="items-list">
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Cookies</span><span class="ar">كوكيز</span></span>
-                    <span class="item-price">45 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Brownies</span><span class="ar">براونيز</span></span>
-                    <span class="item-price">55 EGP</span>
-                </div>
-                <div class="item-card">
-                    <span class="item-name"><span class="en">Cheese Cake</span><span class="ar">تشيز كيك</span></span>
-                    <span class="item-price">80 EGP</span>
-                </div>
+                <div class="item-card"><span class="item-name"><span class="en">Blueberry Smoothie</span><span
+                            class="ar">سموذي توت أزرق</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Mango Smoothie</span><span
+                            class="ar">سموذي مانجو</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Strawberry Smoothie</span><span
+                            class="ar">سموذي فراولة</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Peach Smoothie</span><span
+                            class="ar">سموذي خوخ</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Pineapple Smoothie</span><span
+                            class="ar">سموذي أناناس</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Kiwi Smoothie</span><span
+                            class="ar">سموذي كيوي</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Passion Fruit Smoothie</span><span
+                            class="ar">سموذي باشن فروت</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Pinaculada Smoothie</span><span
+                            class="ar">سموذي بينا كولادا</span></span><span class="item-price">80 EGP</span></div>
             </div>
-            <p class="category-tax-note">
-                <span class="en">✦ All prices include service &amp; tax</span>
-                <span class="ar">✦ جميع الأسعار شاملة الخدمة والضريبة</span>
-            </p>
+
+        </div>
+
+        <!-- SODA CORNER -->
+        <div class="category soda">
+            <div class="category-header">
+                <h2><span class="en">Soda Corner</span><span class="ar">ركن الصودا</span></h2>
+            </div>
+            <div class="items-list">
+                <div class="item-card"><span class="item-name"><span class="en">Redbull</span><span
+                            class="ar">ريدبول</span></span><span class="item-price">85 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Cherry Cola</span><span class="ar">شيري
+                            كولا</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Jelly Cola</span><span class="ar">جيلي
+                            كولا</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Mojito</span><span
+                            class="ar">موهيتو</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Sunshine</span><span class="ar">صن
+                            شاين</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Soft Drinks</span><span
+                            class="ar">مشروبات غازية</span></span><span class="item-price">45 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Mineral Water</span><span
+                            class="ar">مياه معدنية</span></span><span class="item-price">15 EGP</span></div>
+            </div>
+
+        </div>
+
+        <!-- JUICE CORNER -->
+        <div class="category juice">
+            <div class="category-header">
+                <h2><span class="en">Juice Corner</span><span class="ar">عصائر فريش</span></h2>
+            </div>
+            <div class="items-list">
+                <div class="item-card"><span class="item-name"><span class="en">Mango</span><span
+                            class="ar">مانجو</span></span><span class="item-price">80 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Strawberry</span><span
+                            class="ar">فراولة</span></span><span class="item-price">70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Orange</span><span
+                            class="ar">برتقال</span></span><span class="item-price">70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Guava</span><span
+                            class="ar">جوافة</span></span><span class="item-price">70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Tangerine</span><span
+                            class="ar">يوسفي</span></span><span class="item-price">70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Banana With Milk</span><span
+                            class="ar">موز باللبن</span></span><span class="item-price">70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Guava With Milk</span><span
+                            class="ar">جوافة باللبن</span></span><span class="item-price">70 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Lemon Mint</span><span class="ar">ليمون
+                            نعناع</span></span><span class="item-price">70 EGP</span></div>
+            </div>
+
+        </div>
+
+        <!-- BOBA CORNER -->
+        <div class="category boba">
+            <div class="category-header">
+                <h2><span class="en">Boba Corner</span><span class="ar">ركن البوبا</span></h2>
+            </div>
+            <div class="items-list">
+                <div class="item-card"><span class="item-name"><span class="en">Blueberry Boba</span><span
+                            class="ar">بوبا توت أزرق</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Strawberry Boba</span><span
+                            class="ar">بوبا فراولة</span></span><span class="item-price">90 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Passion Fruit Boba</span><span
+                            class="ar">بوبا باشن فروت</span></span><span class="item-price">90 EGP</span></div>
+            </div>
+
+        </div>
+
+        <!-- EXTRAS -->
+        <div class="category extra">
+            <div class="category-header">
+                <h2><span class="en">Extras</span><span class="ar">إضافات</span></h2>
+            </div>
+            <div class="items-list">
+                <div class="item-card"><span class="item-name"><span class="en">Extra Espresso</span><span
+                            class="ar">إضافة إسبريسو</span></span><span class="item-price">30 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Extra Flavor</span><span
+                            class="ar">إضافة نكهة</span></span><span class="item-price">20 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Extra Milk</span><span class="ar">إضافة
+                            حليب</span></span><span class="item-price">20 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Extra Sauce</span><span class="ar">إضافة
+                            صوص</span></span><span class="item-price">20 EGP</span></div>
+                <div class="item-card"><span class="item-name"><span class="en">Extra Boba</span><span class="ar">إضافة
+                            بوبا</span></span><span class="item-price">35 EGP</span></div>
+            </div>
+
         </div>
 
     </section>
@@ -611,10 +698,22 @@
     <footer>
         <img src="Double shot.jpeg" alt="Double Shot Logo" class="footer-logo">
         <div class="footer-content">
-            <h3>📍 <span class="en">Location</span><span class="ar">العنوان</span></h3>
-            <p><span class="en">Double Shot Street – Cairo</span><span class="ar">شارع دابل شوت – القاهرة</span></p>
+            <h3><a href="https://maps.app.goo.gl/mguoxLLYyzhq49Up7" target="_blank"
+                    style="color: inherit; text-decoration: none;">📍 <span class="en">Location</span><span
+                        class="ar">العنوان</span></a></h3>
+            <p><a href="https://maps.app.goo.gl/mguoxLLYyzhq49Up7" target="_blank"
+                    style="color: inherit; text-decoration: none;"><span class="en">Double Shot Cafe</span><span
+                        class="ar">كافيه دابل شوت</span></a></p>
             <h3>⏰ <span class="en">Opening Hours</span><span class="ar">مواعيد العمل</span></h3>
-            <p><span class="en">Daily 10 AM – 2 AM</span><span class="ar">يومياً ١٠ صباحاً – ٢ بعد منتصف الليل</span></p>
+            <p><span class="en">Daily 10 AM – 2 AM</span><span class="ar">يومياً ١٠ صباحاً – ٢ بعد منتصف الليل</span>
+            </p>
+        </div>
+        <div style="margin-top: 40px; font-size: 0.9rem; color: var(--text-muted); text-align: center;">
+            <a href="https://ibrahimahamada27.github.io/My-Protofolio/" target="_blank"
+                style="color: inherit; text-decoration: none; transition: color 0.3s;"
+                onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='inherit'">
+                &copy; 2026 Powered by Eng. Ibrahim A. Hamada
+            </a>
         </div>
     </footer>
 
@@ -643,4 +742,5 @@
     </script>
 
 </body>
+
 </html>
